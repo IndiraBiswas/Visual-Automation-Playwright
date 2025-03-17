@@ -58,8 +58,6 @@ npx playwright test --update-snapshots
 ### ✅ Employee Addition and Details Page
 - Compare the UI of the "Add Employee" form and the "Employee Details" page after saving a new employee.
 
-### ✅ Supervisor Assignment Confirmation
-- Verify the UI of the Supervisor Assignment section after assigning a supervisor to an employee.
 
 ## 🔍 How Playwright Handles Visual Testing
 - Playwright uses `expect(page).toHaveScreenshot()` to capture and compare screenshots.
@@ -67,26 +65,6 @@ npx playwright test --update-snapshots
 - On subsequent test runs, it **compares the new screenshot with the baseline**.
 - If there's a **difference**, Playwright **highlights the changes** and saves the **diff images**.
 
-
-```
-
-## 📌 Folder Structure
-```
-📂 tests/
-│── admin-dashboard.spec.js
-│── employee-search.spec.js
-│── add-employee.spec.js
-│── supervisor-assignment.spec.js
-.env
-package.json
-playwright.config.js
-README.md
-```
-
-## 🎯 Future Enhancements
-- Extend tests for more UI components
-- Automate reports for visual diffs
-- Add multi-browser support for visual testing
 
 ---
 📌 **Happy Testing! 🚀**
